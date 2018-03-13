@@ -67,7 +67,7 @@ public class SecuritySystemClient {
             if (responseLen > 0)
             	System.out.println("Data length: " + responseLen);
 		
-			switch (responseType){
+		switch (responseType){
                 case KEEPALIVE: 
                     System.out.println("Sending KEEPALIVE request to server");
                     outToServer.writeByte(KEEPALIVE);
