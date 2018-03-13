@@ -93,14 +93,14 @@ public class SecuritySystemClient {
             		int n = reader.nextInt();
             		if(n == 1)
             		{
-            			System.out.println("Sending ALARM message to server");
+            		System.out.println("Sending ALARM message to server");
                     	outToServer.writeByte(ALARM);
                     	outToServer.writeShort(0);
                     	System.out.println("ALARM message sent");
             		}
             		else
             		{
-            			System.out.println("Sending DISCARD message to server");
+            		System.out.println("Sending DISCARD message to server");
                     	outToServer.writeByte(DISCARD);
                     	outToServer.writeShort(0);
                     	System.out.println("DISCARD message sent");
